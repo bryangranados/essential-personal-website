@@ -4,11 +4,17 @@ const navItems = {
   '/': {
     name: 'home',
   },
-  '/blog': {
-    name: 'blog',
+  // '/blog': {
+  //   name: 'blog',
+  // },
+  'mailto:bryan@granados.cc': {
+    name: 'email',
   },
-  'https://vercel.com/templates/next.js/portfolio-starter-kit': {
-    name: 'deploy',
+  'https://www.bryan.works/': {
+    name: 'terminal',
+  },
+  '#': {
+    name: 'portfolio (updating for 2025)',
   },
 }
 
@@ -26,8 +32,13 @@ export function Navbar() {
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  className="flex align-middle relative py-1 px-2 m-1"
                 >
+                  {/* <Link
+                  key={path}
+                  href={path}
+                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                ></Link> */}
                   {name}
                 </Link>
               )

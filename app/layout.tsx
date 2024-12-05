@@ -7,19 +7,20 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
+import Head from 'next/head'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'Hi, I\'m Bryan',
+    template: '%s | Bryan Granados',
   },
-  description: 'This is my portfolio.',
+  description: 'Product Service Delivery Lead',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'Hi, I\'m Bryan',
+    description: 'Product Service Delivery Lead',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'Hi, I\'m Bryan',
     locale: 'en_US',
     type: 'website',
   },
@@ -34,6 +35,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  icons: {
+    icon: '/favicon.svg', // Main favicon
+  },
 }
 
 const cx = (...classes) => classes.filter(Boolean).join(' ')
@@ -47,11 +51,15 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-black',
+        'text-stone-950 bg-neutral-200 dark:text-white dark:bg-slate-950',
         GeistSans.variable,
         GeistMono.variable
       )}
     >
+      <Head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      </Head>
+
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />

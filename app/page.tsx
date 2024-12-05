@@ -3,19 +3,20 @@ import { BlogPosts } from 'app/components/posts'
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+      <h1 className="mb-2 text-2xl font-semibold tracking-tighter">
+        Bryan Granados
       </h1>
+      <h2 className="mb-8 text-xl font-semibold tracking-tighter">
+        Product Service Delivery Lead
+      </h2>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`Born in Lima. Two decades in the US. From marketing to engineering and then to product. Currently work at an award-winning software development agency, based in the US. Also the managing director of one of our Latam offices. Mostly based in Lima now, but travel often.
+
+Coffee aficionado. Survival RPG fanatic. Carbonara lover. Vargas Llosa reader. Four cats, all named Chicken. Ask me about my K/D ratio.`}
       </p>
-      <div className="my-8">
+      {/* <div className="my-8">
         <BlogPosts />
-      </div>
+      </div> */}
     </section>
   )
 }
