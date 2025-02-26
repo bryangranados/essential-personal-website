@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     default: 'Hi, I\'m Bryan',
     template: '%s | Bryan Granados',
   },
-  description: 'Product Service Delivery Lead',
+  description: 'Senior Product Service Delivery Lead',
   openGraph: {
     title: 'Hi, I\'m Bryan',
-    description: 'Product Service Delivery Lead',
+    description: 'Senior Product Service Delivery Lead',
     url: baseUrl,
     siteName: 'Hi, I\'m Bryan',
     locale: 'en_US',
